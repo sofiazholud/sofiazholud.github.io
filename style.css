@@ -56,67 +56,28 @@ h2 {
     letter-spacing: 2px;
 }
 
-.directions {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+#directions-text {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 18px;
 }
 
-.directions li {
-    background: rgba(255,255,255,0.15);
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #a8e6cf;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.directions li:hover {
-    background: rgba(255,255,255,0.25);
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.card {
-    background: rgba(255,255,255,0.15);
-    border-radius: 10px;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
+.social-icons a:hover {
     color: #fff;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    background: rgba(255,255,255,0.25);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-section a {
-    display: inline-block;
-    margin: 5px 0;
-    color: #a8e6cf;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-section a:hover {
-    text-decoration: underline;
 }
 
 footer {
