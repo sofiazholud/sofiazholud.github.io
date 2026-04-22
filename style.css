@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     background: url('background.png') no-repeat center center fixed;
@@ -7,10 +8,11 @@ body {
     color: #fff;
 }
 
+
 header {
     text-align: center;
     padding: 80px 20px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -19,6 +21,7 @@ h1 {
     letter-spacing: 3px;
     font-weight: bold;
 }
+
 
 .lang-switch {
     margin-top: 20px;
@@ -40,11 +43,12 @@ h1 {
     background: #f1f1f1;
 }
 
+
 main {
     padding: 40px 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     border-radius: 12px;
 }
 
@@ -56,22 +60,29 @@ h2 {
     letter-spacing: 2px;
 }
 
+
 .directions {
     list-style: none;
     padding: 0;
     margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
 }
 
 .directions li {
-    background: rgba(255,255,255,0.1);
-    padding: 10px;
-    border-radius: 6px;
+    background: rgba(255,255,255,0.15);
+    padding: 12px;
+    border-radius: 8px;
     text-align: center;
     font-weight: bold;
+    transition: 0.3s;
 }
+
+.directions li:hover {
+    background: rgba(255,255,255,0.25);
+}
+
 
 .projects {
     display: flex;
@@ -82,17 +93,18 @@ h2 {
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.15);
     border-radius: 10px;
     padding: 20px;
-    width: 260px;
+    width: 280px;
     text-align: center;
     color: #fff;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
+    background: rgba(255,255,255,0.25);
 }
 
 .card img {
@@ -100,6 +112,7 @@ h2 {
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
 
 section a {
     display: inline-block;
@@ -113,10 +126,11 @@ section a:hover {
     text-decoration: underline;
 }
 
+
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     margin-top: 40px;
     font-size: 14px;
     letter-spacing: 1px;
