@@ -80,9 +80,14 @@ h2 {
     transition: transform 0.3s, filter 0.3s;
 }
 
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
 .social-icons img:hover {
-    transform: scale(1.2);
-    filter: none; /* при наведенні показує кольорову іконку */
+    transform: scale(1.2); /* легке збільшення при наведенні */
 }
 
 /* Футер */
