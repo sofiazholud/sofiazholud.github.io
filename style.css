@@ -99,3 +99,25 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
 }
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.lang-switch button {
+    margin-right: 8px;
+    padding: 8px 14px;
+    border: none;
+    background: #fff;
+    color: #2e7d32;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.lang-switch button:hover {
+    background: #f1f1f1;
+}
