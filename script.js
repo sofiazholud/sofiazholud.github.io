@@ -5,7 +5,7 @@ const translations = {
         studioText: "Насичені і збалансовані тренування, сертифіковані тренери, семінари за різними тематиками, медитації, подорожі… все це чекає саме на тебе!",
         directionsTitle: "Напрямки",
         directionsText: "• Флай Йога\n• Ішвара Йога\n• Йога Айенгара\n• Пілатес\n• Флай Пілатес\n• Функціональні тренування\n• Флай Кідс\n• Йога для вагітних та післяпологова йога",
-        projectsTitle: "Наші проєкти",
+        projectsTitle: "Ми в соцмережах",
         contactsTitle: "Контакти",
         address: "Вишгород, пр. Шевченка 6А",
         phoneLabel: "Адміністратор:",
@@ -17,7 +17,7 @@ const translations = {
         studioText: "Balanced trainings, certified coaches, seminars on various topics, meditations, journeys… all this awaits you!",
         directionsTitle: "Directions",
         directionsText: "• Fly Yoga\n• Ishvara Yoga\n• Iyengar Yoga\n• Pilates\n• Fly Pilates\n• Functional Training\n• Fly Kids\n• Yoga for Pregnancy and Postpartum",
-        projectsTitle: "Our Projects",
+        projectsTitle: "We are on social media",
         contactsTitle: "Contacts",
         address: "Vyshhorod, Shevchenka Ave 6A",
         phoneLabel: "Administrator:",
@@ -35,5 +35,4 @@ function setLanguage(lang) {
     document.getElementById("contacts-title").textContent = translations[lang].contactsTitle;
     document.getElementById("address").textContent = translations[lang].address;
     document.getElementById("phone-label").textContent = translations[lang].phoneLabel;
-    document.getElementById("footer-text").textContent = translations[lang].footerText;
-}
+    document.getElementById("footer-text").textContent = translations[lang].footer
