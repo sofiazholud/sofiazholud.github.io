@@ -35,4 +35,5 @@ function setLanguage(lang) {
     document.getElementById("contacts-title").textContent = translations[lang].contactsTitle;
     document.getElementById("address").textContent = translations[lang].address;
     document.getElementById("phone-label").textContent = translations[lang].phoneLabel;
-    document.getElementById("footer-text").textContent = translations[lang].footer
+    document.getElementById("footer-text").textContent = translations[lang].footerText;
+}
