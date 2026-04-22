@@ -1,27 +1,27 @@
 const translations = {
     ua: {
-        subtitle: "Erra Space",
-        aboutTitle: "Про нас",
-        aboutText: "Простір твого духовного росту та фізичного самовдосконалення",
-        contactTitle: "Зв’язатися з нами",
-        contactText: "Слідкуйте за нами у соцмережах:",
+        subtitle: "Простір, який піклується не лише про фізичний, а і про внутрішній стан.",
+        studioTitle: "Про студію",
+        studioText: "Насичені і збалансовані тренування, сертифіковані тренери, семінари за різними тематиками, медитації, подорожі… все це чекає саме на тебе!",
+        directionsTitle: "Напрямки",
+        directionsList: ["Флай Йога","Ішвара Йога","Йога Айенгара","Пілатес","Флай Пілатес","Функціональні тренування","Флай Кідс","Йога для вагітних та післяпологова йога"],
+        projectsTitle: "Наші проєкти",
+        contactsTitle: "Контакти",
         footerText: "© 2026 Erra Studio. Всі права захищені."
     },
     en: {
-        subtitle: "Erra Space",
-        aboutTitle: "About Us",
-        aboutText: "A space for your spiritual growth and physical self‑improvement",
-        contactTitle: "Contact Us",
-        contactText: "Follow us on social media:",
+        subtitle: "A space that cares not only about the physical but also the inner state.",
+        studioTitle: "About Studio",
+        studioText: "Balanced trainings, certified coaches, seminars on various topics, meditations, journeys… all this awaits you!",
+        directionsTitle: "Directions",
+        directionsList: ["Fly Yoga","Ishvara Yoga","Iyengar Yoga","Pilates","Fly Pilates","Functional Training","Fly Kids","Yoga for Pregnancy and Postpartum"],
+        projectsTitle: "Our Projects",
+        contactsTitle: "Contacts",
         footerText: "© 2026 Erra Studio. All rights reserved."
     }
 };
 
 function setLanguage(lang) {
     document.getElementById("subtitle").textContent = translations[lang].subtitle;
-    document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-    document.getElementById("about-text").textContent = translations[lang].aboutText;
-    document.getElementById("contact-title").textContent = translations[lang].contactTitle;
-    document.getElementById("contact-text").textContent = translations[lang].contactText;
-    document.getElementById("footer-text").textContent = translations[lang].footerText;
-}
+    document.getElementById("studio-title").textContent = translations[lang].studioTitle;
+    document.getElementById("studio-text").textContent =
