@@ -1,3 +1,67 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.lang-switch {
+    margin-top: 20px;
+}
+
+.lang-switch button {
+    margin: 0 8px;
+    padding: 10px 18px;
+    border: none;
+    background: #fff;
+    color: #2e7d32;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.lang-switch button:hover {
+    background: #f1f1f1;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+#directions-text {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -6,11 +70,22 @@
 }
 
 .social-icons img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1); /* робить іконки білими */
+    transition: transform 0.3s, filter 0.3s;
 }
 
 .social-icons img:hover {
     transform: scale(1.2);
+    filter: none; /* при наведенні показує кольорову іконку */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
