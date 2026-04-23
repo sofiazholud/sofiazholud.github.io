@@ -52,19 +52,14 @@ h1 {
 
 /* Карусель */
 .carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-track {
     display: flex;
-    transition: transform 0.5s ease;
+    overflow: hidden;
+    position: relative;
 }
 
 .slide {
     min-width: 100%;
-    text-align: center;
+    transition: transform 0.5s ease;
 }
 
 .slide img {
@@ -124,4 +119,3 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
 }
-
