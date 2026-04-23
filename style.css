@@ -5,10 +5,9 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
 }
 
-/* Заголовок ERRA SPACE */
+/* Заголовок */
 h1 {
     font-weight: 400;
     font-size: 3rem;
@@ -28,69 +27,62 @@ h1 {
     margin: 0 auto;
 }
 
-/* Заголовки секцій */
-h2 {
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-/* Шапка */
-header {
-    background: rgba(0,0,0,0.4);
-    border-radius: 12px;
-    padding: 60px 20px;
-    margin-bottom: 30px;
-}
-
 /* Секції */
-section {
-    padding: 40px 20px;
-    background: rgba(0,0,0,0.5); /* заливка */
+header, section, footer {
+    background: rgba(255,255,255,0.05);
     border-radius: 12px;
+    padding: 40px 20px;
     margin-bottom: 30px;
 }
 
-/* Список напрямків */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Картки напрямків */
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
-li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-li::before {
-    content: "•";
-    color: #a8c69f;
-    padding-right: 15px;
-}
-
-/* Соцмережі */
-.social-icons,
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
-}
-
-.social-icons img,
-.social-links img {
-    width: 80px;
-    height: 80px;
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s;
 }
 
-.social-icons img:hover,
-.social-links img:hover {
-    transform: scale(1.2);
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Соцмережі */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
 }
 
 /* Карта */
@@ -104,21 +96,6 @@ li::before {
 /* Футер */
 footer {
     text-align: center;
-    padding: 20px;
-    background: rgba(0,0,0,0.7);
-    margin-top: 40px;
     font-size: 14px;
     letter-spacing: 1px;
-    border-radius: 12px;
-}
-
-/* Адаптивність */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .cta-button {
-        width: 100%;
-        text-align: center;
-    }
 }
