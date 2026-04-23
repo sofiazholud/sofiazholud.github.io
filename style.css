@@ -7,84 +7,88 @@ body {
     line-height: 1.6;
 }
 
-/* Заголовок */
-h1 {
-    font-weight: 400;
-    font-size: 3rem;
-    letter-spacing: 0.3em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-/* Підзаголовок */
-.hero-text {
-    font-style: italic;
-    font-size: 1.1rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-/* Секції */
 header, section, footer {
     background: rgba(255,255,255,0.08);
     border-radius: 12px;
     padding: 40px 20px;
     margin-bottom: 30px;
-}
-
-/* Картки напрямків */
-.directions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
-    overflow: hidden;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
 }
 
-.card img {
-    width: 100%;
-    height: 200px; /* однаковий розмір для всіх фото */
-    object-fit: cover;
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.card p {
-    margin: 10px 0;
-    font-size: 1.1rem;
+.hero-text {
     font-style: italic;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 /* Соцмережі */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     margin-top: 20px;
 }
 
-.social-icons img, .icon {
+.social-icons img {
     width: 40px;
     height: 40px;
-    filter: invert(100%); /* робить іконки білими */
+    filter: invert(100%);
     transition: transform 0.3s;
 }
 
-.social-icons img:hover, .icon:hover {
+.social-icons img:hover {
     transform: scale(1.2);
 }
+
+/* Карусель */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.prev, .next {
+    background: #fff;
+    color: #1a2a1a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 
 /* Карта */
 .map-container {
@@ -94,9 +98,25 @@ header, section, footer {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+/* Кнопка навігації */
+.nav-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #1a2a1a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.nav-button:hover {
+    background: #ddd;
+}
+
 /* Футер */
 footer {
-    text-align: center;
     font-size: 14px;
     letter-spacing: 1px;
 }
+
