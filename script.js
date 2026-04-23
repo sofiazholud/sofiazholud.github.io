@@ -37,3 +37,25 @@ function setLanguage(lang) {
     document.getElementById("phone-label").textContent = translations[lang].phoneLabel;
     document.getElementById("footer-text").textContent = translations[lang].footerText;
 }
+
+* Карусель */
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const offset = -currentSlide * 100;
+    slides.forEach(slide => {
+        slide.style.transform = `translateX(${offset}%)`;
+    });
+}
