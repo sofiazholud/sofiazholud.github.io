@@ -142,4 +142,13 @@ footer {
     border-radius: 12px;
     padding: 20px;
 }
+/* Телефон у контактах */
+a[href^="tel"] {
+    color: #ffffff;       /* білий текст */
+    text-decoration: none; /* прибирає підкреслення */
+    font-weight: bold;     /* робить жирним */
+}
 
+a[href^="tel"]:hover {
+    color: #ddd;           /* світліший при наведенні */
+}
