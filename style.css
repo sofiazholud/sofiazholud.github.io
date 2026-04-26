@@ -1,3 +1,4 @@
+/* Базові стилі */
 body {
   font-family: 'Cormorant Garamond', serif;
   background-color: #1a2a1a;
@@ -7,100 +8,21 @@ body {
   line-height: 1.6;
 }
 
-/* Перемикач мов */
-.lang-switch {
-  text-align: right;
-  margin-bottom: 15px;
-}
-.lang-switch button {
-  background: #ffffff;
-  color: #1a2a1a;
-  border: none;
-  padding: 10px 18px;
-  margin-left: 5px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-.lang-switch button:hover {
-  background: #ddd;
-}
-
-/* Шапка */
-header {
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 40px 20px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-h1 {
-  font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.hero-text {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: rgba(255,255,255,0.9);
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-/* Секції */
-section {
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 40px 20px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-/* Соцмережі */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-.social-icons img {
-  width: 40px;
-  height: 40px;
-  filter: invert(100%);
-  transition: transform 0.3s;
-}
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
 /* Напрямки */
 .directions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
+
+/* Картка */
 .card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
   perspective: 1000px;
 }
 .card-inner {
   position: relative;
   width: 100%;
-  height: 320px; /* трохи більше місця для тексту */
+  height: 320px;              /* висота картки */
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -111,9 +33,15 @@ h2 {
   backface-visibility: hidden;
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+/* Лицьова сторона */
 .card-front {
   background: rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card-front img {
   width: 100%;
@@ -126,6 +54,8 @@ h2 {
   font-style: italic;
   color: rgba(255,255,255,0.9);
 }
+
+/* Зворотна сторона */
 .card-back {
   background: rgba(255,255,255,0.1);
   color: #fff;
@@ -134,7 +64,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  text-align: justify;   /* рівняє текст по ширині */
+  text-align: justify;        /* рівняє текст */
 }
 .card-back p {
   margin: 0;
@@ -142,9 +72,8 @@ h2 {
   line-height: 1.5;
   word-break: break-word;
   hyphens: auto;
-  max-width: 90%;        /* щоб текст не торкався країв */
+  max-width: 90%;             /* щоб текст не торкався країв */
 }
-
 
 /* Ефект перевороту */
 .card:hover .card-inner {
@@ -154,145 +83,6 @@ h2 {
 /* 📱 Для мобільних — flip при тапі */
 @media (max-width: 768px) {
   .card { cursor: pointer; }
-  .card.active .card-inner {
-    transform: rotateY(180deg);
-  }
+  .card.active .card-inner { transform: rotateY(180deg); }
 }
 
-/* Контакти */
-.contact-blocks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
-}
-.contact-block {
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  text-align: center;
-}
-.contact-block p {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-.contact-block iframe {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  margin-top: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.4);
-}
-
-/* Кнопка навігації */
-.nav-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #ffffff;
-  color: #1a2a1a !important;
-  border-radius: 8px;
-  text-decoration: none !important;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.nav-button:hover {
-  background: #ddd;
-}
-
-/* Телефон */
-a[href^="tel"] {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: bold;
-}
-a[href^="tel"]:hover {
-  color: #ddd !important;
-}
-
-/* Instagram у контактах */
-.contact-block a[href*="instagram.com"] {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-style: italic;
-  font-weight: bold;
-}
-.contact-block a[href*="instagram.com"]:hover {
-  color: #ddd !important;
-}
-
-/* CTA */
-.cta {
-  text-align: center;
-  margin: 30px 0;
-}
-.cta-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 16px 28px;
-  background: #ffffff;
-  color: #1a2a1a;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: background 0.3s;
-}
-.cta-button:hover {
-  background: #ddd;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255,255,255,0.4);
-}
-.cta-button { cursor: pointer; }
-
-/* Футер */
-footer {
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 1px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 20px;
-}
-footer { position: relative; bottom: 0; width: 100%; }
-
-/* Анімація */
-.card, section, footer {
-  animation: fadeInUp 0.8s ease both;
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 📱 Мобільна адаптивність */
-@media (max-width: 768px) {
-  section { padding: 20px 10px; }
-  h1 { font-size: 2rem; letter-spacing: 0.2em; }
-  h2 { font-size: 1.4rem; letter-spacing: 1px; }
-  .directions-grid { grid-template-columns: 1fr; }
-  .card-front img { max-height: 180px; }
-  .cta-button {
-    display: block;
-    width: 100%;
-    margin: 15px 0;
-    padding: 16px 32px;
-    font-size: 1.1rem;
-  }
-  .contact-blocks { grid-template-columns: 1fr; }
-  .lang-switch button {
-    padding: 12px 20px !important;
-    font-size: 1.1rem !important;
-  }
-  .nav-button {
-    padding: 14px 28px !important;
-    font-size: 1.2rem !important;
-    display: block;
-    margin: 15px auto;
-  }
-  .social-icons img {
-    width: 32px;
-    height: 32px;
-  }
-}
