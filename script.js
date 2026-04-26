@@ -13,13 +13,7 @@ const translations = {
         "nav-btn-2": "Навігація",
         "cta-button": "Записатися на заняття",
         "footer-text": "© 2026 Erra Studio. Всі права захищені.",
-        
-        // Назви напрямків
         "fly-yoga": "Флай Йога",
-        "ishvara-yoga": "Ішвара Йога",
-        "adho-yoga": "Адхо-йога",
-        
-        // Описи (новинка)
         "fly-yoga-desc": "Це унікальне заняття в гамаках, яке допомагає розслабити хребет та відчути невагомість.",
         "btn-more-1": "Детальніше"
     },
@@ -28,26 +22,7 @@ const translations = {
         "subtitle": "A space that cares not only about the physical but also the inner state.",
         "social-title": "Social Media",
         "directions-title": "Directions",
-        "contacts-title": "Contacts",
-        "address-1": "📍 Vyshhorod, 6A Shevchenka Ave",
-        "address-2": "📍 Mezhyrichchia, 60 Fistashkova St",
-        "phone-label-1": "Administrator:",
-        "phone-label-2": "Administrator:",
-        "nav-btn-1": "Navigation",
-        "nav-btn-2": "Navigation",
-        "cta-button": "Book a class",
-        "footer-text": "© 2026 Erra Studio. All rights reserved.",
-        
-        // Назви напрямків
-        "fly-yoga": "Fly Yoga",
-        "ishvara-yoga": "Ishvara Yoga",
-        "adho-yoga": "ADHO Yoga",
-        
-        // Описи
-        "fly-yoga-desc": "A unique workout in hammocks that helps relax the spine and feel weightless.",
-        "btn-more-1": "More details"
-    }
-};
+        "contacts-title": "Contacts
 
 // Функція перекладу
 function setLanguage(lang) {
