@@ -160,7 +160,6 @@ h2 {
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-
 /* 📱 Для мобільних — flip при тапі */
 @media (max-width: 768px) {
   .card {
