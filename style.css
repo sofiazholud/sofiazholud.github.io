@@ -109,46 +109,7 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Карта */
-.map-container {
-    margin-top: 20px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-/* Кнопка навігації */
-.nav-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #ffffff;
-    color: #1a2a1a;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-.nav-button:hover {
-    background: #ddd;
-}
-
-/* Футер */
-footer {
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 12px;
-    padding: 20px;
-}
-/* Телефон у контактах */
-a[href^="tel"] {
-    color: #ffffff;       /* білий текст */
-    text-decoration: none; /* прибирає підкреслення */
-    font-weight: bold;     /* робить жирним */
-}
-
-a[href^="tel"]:hover {
-    color: #ddd;           /* світліший при наведенні */
-}
+/* Контакти */
+.contact-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
