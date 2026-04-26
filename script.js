@@ -1,57 +1,42 @@
+// Переклади
 const translations = {
-    ua: {
-        "title": "ERRA SPACE",
-        "subtitle": "Простір, який піклується не лише про фізичний, а і про внутрішній стан.",
-        "social-title": "Ми в соцмережах",
-        "directions-title": "Напрямки",
-        "contacts-title": "Контакти",
-        "address-1": "📍 Вишгород, пр. Шевченка 6А",
-        "address-2": "📍 КМ Межріччя, вул. Фісташкова 60",
-        "phone-label-1": "Адміністратор:",
-        "phone-label-2": "Адміністратор:",
-        "nav-btn-1": "Навігація",
-        "nav-btn-2": "Навігація",
-        "cta-button": "Записатися на заняття",
-        "footer-text": "© 2026 Erra Studio. Всі права захищені.",
-        "fly-yoga": "Флай Йога",
-        "fly-yoga-desc": "Це унікальне заняття в гамаках, яке допомагає розслабити хребет та відчути невагомість.",
-        "btn-more-1": "Детальніше"
-    },
-    en: {
-        "title": "ERRA SPACE",
-        "subtitle": "A space that cares not only about the physical but also the inner state.",
-        "social-title": "Social Media",
-        "directions-title": "Directions",
-        "contacts-title": "Contacts",
-        "address-1": "📍 Vyshhorod, 6A Shevchenka Ave",
-        "address-2": "📍 Mezhyrichchia, 60 Fistashkova St",
-        "phone-label-1": "Administrator:",
-        "phone-label-2": "Administrator:",
-        "nav-btn-1": "Navigation",
-        "nav-btn-2": "Navigation",
-        "cta-button": "Book a class",
-        "footer-text": "© 2026 Erra Studio. All rights reserved.",
-        "fly-yoga": "Fly Yoga",
-        "fly-yoga-desc": "A unique workout in hammocks that helps relax the spine and feel weightless.",
-        "btn-more-1": "More details"
-    }
+  ua: {
+    subtitle: "Простір, який піклується не лише про фізичний, а і про внутрішній стан.",
+    socialTitle: "Ми в соцмережах",
+    directionsTitle: "Напрямки",
+    contactsTitle: "Контакти",
+    footerText: "© 2026 Erra Studio. Всі права захищені.",
+    phoneLabel1: "Адміністратор:",
+    phoneLabel2: "Адміністратор:"
+  },
+  en: {
+    subtitle: "A space that cares not only about the physical but also the inner state.",
+    socialTitle: "We are on social media",
+    directionsTitle: "Directions",
+    contactsTitle: "Contacts",
+    footerText: "© 2026 Erra Studio. All rights reserved.",
+    phoneLabel1: "Administrator:",
+    phoneLabel2: "Administrator:"
+  }
 };
 
-// Функція перекладу
+// Функція перемикання мови
 function setLanguage(lang) {
-    for (const key in translations[lang]) {
-        const el = document.getElementById(key);
-        if (el) {
-            el.textContent = translations[lang][key];
-        }
-    }
+  document.getElementById("subtitle").textContent = translations[lang].subtitle;
+  document.getElementById("social-title").textContent = translations[lang].socialTitle;
+  document.getElementById("directions-title").textContent = translations[lang].directionsTitle;
+  document.getElementById("contacts-title").textContent = translations[lang].contactsTitle;
+  document.getElementById("footer-text").textContent = translations[lang].footerText;
+  document.getElementById("phone-label-1").textContent = translations[lang].phoneLabel1;
+  document.getElementById("phone-label-2").textContent = translations[lang].phoneLabel2;
 }
 
-// Функція для розгортання тексту (додай її сюди)
+// Відкриття модального вікна
 function openModal(id) {
-  document.getElementById(id).style.display = "block";
+  document.getElementById(id).style.display = "flex"; // flex для центрування
 }
 
+// Закриття модального вікна
 function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
@@ -64,12 +49,14 @@ window.onclick = function(event) {
       modals[i].style.display = "none";
     }
   }
-}
+};
 
-
-// Додаємо слухач для мобільних
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('active');
-  });
+// Закриття по клавіші Esc
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    const modals = document.getElementsByClassName("modal");
+    for (let i = 0; i < modals.length; i++) {
+      modals[i].style.display = "none";
+    }
+  }
 });
