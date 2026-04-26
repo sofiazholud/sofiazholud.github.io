@@ -9,63 +9,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Перемикач мов -->
     <div class="lang-switch">
         <button onclick="setLanguage('ua')">UA</button>
         <button onclick="setLanguage('en')">EN</button>
     </div>
 
+    <!-- Шапка -->
     <header>
         <h1 id="title">ERRA SPACE</h1>
         <p class="hero-text" id="subtitle">Простір, який піклується не лише про фізичний, а і про внутрішній стан.</p>
     </header>
 
+    <!-- Соцмережі -->
     <section>
         <h2 id="social-title">Ми в соцмережах</h2>
         <div class="social-icons">
             <a href="https://www.instagram.com/erraspace.ua" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
             <a href="https://www.facebook.com/erraspace.ua" target="_blank"><img src="facebook.svg" alt="Facebook"></a>
             <a href="https://www.tiktok.com/@erraspace.ua" target="_blank"><img src="tiktok.svg" alt="TikTok"></a>
+            <a href="https://www.threads.net/@erraspace.ua" target="_blank"><img src="threads.svg" alt="Threads"></a>
             <a href="https://t.me/ERRA_SPASE" target="_blank"><img src="telegram.svg" alt="Telegram"></a>
         </div>
     </section>
 
+    <!-- Напрямки -->
     <section>
         <h2 id="directions-title">Напрямки</h2>
         <div class="directions-grid">
-            
             <div class="card">
-                <img src="fly-yoga.JPG" alt="Fly Yoga">
-                <p id="fly-yoga">Флай Йога</p>
-                <button class="details-btn" onclick="toggleText(this)" id="btn-more-1">Детальніше</button>
-                <div class="description-text">
-                    <p id="fly-yoga-desc">Це унікальне заняття в гамаках, яке допомагає розслабити хребет та відчути невагомість.</p>
-                </div>
+                <img src="fly-yoga.jpg" alt="Fly Yoga">
+                <h3 id="fly-yoga">Флай Йога</h3>
+                <button onclick="toggleText(this)" id="btn-more-1">Детальніше</button>
+                <p id="fly-yoga-desc" style="display:none;">
+                    Це унікальне заняття в гамаках, яке допомагає розслабити хребет та відчути невагомість.
+                </p>
             </div>
-
-            </div>
+            <!-- Додай інші картки за аналогією -->
+        </div>
     </section>
 
+    <!-- CTA -->
     <div class="cta">
-        <a href="https://instasport.ua/uk/portal/erraspace" class="cta-button" id="cta-button">Записатися на заняття</a>
+        <a href="https://instasport.ua/uk/portal/erraspace" id="cta-button" class="cta-button">Записатися на заняття</a>
     </div>
 
+    <!-- Контакти -->
     <section>
         <h2 id="contacts-title">Контакти</h2>
         <div class="contact-blocks">
             <div class="contact-block">
                 <p id="address-1">📍 Вишгород, пр. Шевченка 6А</p>
                 <p>📞 <span id="phone-label-1">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <a href="https://maps.google.com" target="_blank" class="nav-button" id="nav-btn-1">Навігація</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!...Shevchenka..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Вишгород,+пр.+Шевченка+6А" id="nav-btn-1" target="_blank" class="nav-button">Навігація</a>
             </div>
-
             <div class="contact-block">
                 <p id="address-2">📍 КМ Межріччя, вул. Фісташкова 60</p>
                 <p>📞 <span id="phone-label-2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <a href="https://maps.google.com" target="_blank" class="nav-button" id="nav-btn-2">Навігація</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!...Fistashkova..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=КМ+Межріччя,+вул.+Фісташкова+60" id="nav-btn-2" target="_blank" class="nav-button">Навігація</a>
+                <p>Instagram: <a href="https://www.instagram.com/erraspace_mr" target="_blank">@erraspace_mr</a></p>
             </div>
         </div>
     </section>
 
+    <!-- Футер -->
     <footer>
         <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
     </footer>
