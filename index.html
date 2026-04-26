@@ -46,8 +46,10 @@ html
       <div class="card" onclick="openModal('functional-training')"><img src="functional-training.JPG" alt="Functional Training"><p>Функціональні тренування</p></div>
       <div class="card" onclick="openModal('fly-class')"><img src="kids-fly-yoga.jpg" alt="Kids Fly Yoga"><p>Флай Кідс</p></div>
       <div class="card" onclick="openModal('pregnancy-yoga')"><img src="pregnancy-yoga.jpg" alt="Pregnancy Yoga"><p>Йога для вагітних</p></div>
-      <div class="card" onclick="openModal('adho-yoga')"><img src="ADHOyoga.jpg" alt="Adho Yoga"><p>Адхo-йога</p></div>
-    </div>
+      <div class="card" onclick="openModal('adho-yoga')">
+  <img src="ADHOyoga.jpg" alt="Adho Yoga">
+  <p>Адхо-йога</p>
+</div>
   </section>
 
   <!-- Модальні вікна -->
@@ -59,7 +61,13 @@ html
   <div id="functional-training" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('functional-training')">&times;</span><h2>Функціональні тренування</h2><p>Комплекс вправ...</p></div></div>
   <div id="fly-class" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('fly-class')">&times;</span><h2>Флай Клас</h2><p>Заняття у гамаках...</p></div></div>
   <div id="pregnancy-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span><h2>Йога для вагітних</h2><p>М'які практики...</p></div></div>
-  <div id="adho-yoga" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('adho-yoga')">&times;</span><h2>Адхо-йога</h2><p>Практика з елементами...</p></div></div>
+  <div id="adho-yoga" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('adho-yoga')">&times;</span>
+    <h2>Адхо-йога</h2>
+    <p>Практика з елементами релаксації та позитивної енергії...</p>
+  </div>
+</div>
 
   <!-- CTA -->
   <div class="cta">
