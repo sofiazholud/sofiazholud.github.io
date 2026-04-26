@@ -48,16 +48,13 @@ function setLanguage(lang) {
 }
 
 // Функція для розгортання тексту (додай її сюди)
-function toggleText(button) {
-    const desc = button.nextElementSibling;
-    if (desc.style.display === "none" || desc.style.display === "") {
-        desc.style.display = "block";
-        button.innerText = (document.documentElement.lang === "en") ? "Hide" : "Згорнути";
-    } else {
-        desc.style.display = "none";
-        button.innerText = (document.documentElement.lang === "en") ? "More details" : "Детальніше";
-    }
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
 }
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
 
 // Додаємо слухач для мобільних
 document.querySelectorAll('.card').forEach(card => {
