@@ -119,22 +119,23 @@ h2 {
 .modal-content {
   background: #1a2a1a;
   color: #fff;
-  margin: 10% auto;
-  padding: 20px;
+  margin: 5% auto;        /* менший відступ зверху */
+  padding: 30px;          /* більше відступів */
   border-radius: 12px;
-  width: 80%;
-  max-width: 600px;
+  width: 80%;             /* ширше вікно */
+  max-width: 900px;       /* збільшена максимальна ширина */
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.8;       /* більше повітря між рядками */
+  font-size: 1.1rem;      /* трохи більший текст */
 }
 .modal-content h2 {
   margin-top: 0;
-  font-size: 1.6rem;
+  font-size: 2rem;        /* більший заголовок */
   letter-spacing: 1px;
 }
 .close {
   float: right;
-  font-size: 2rem;
+  font-size: 2.4rem;      /* велика кнопка закриття */
   cursor: pointer;
 }
 
