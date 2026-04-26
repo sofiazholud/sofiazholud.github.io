@@ -5,8 +5,23 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
 }
+.lang-switch { text-align: right; margin-bottom: 15px; }
+.lang-switch button { background:#fff; color:#1a2a1a; border:none; padding:6px 12px; margin-left:5px; border-radius:6px; cursor:pointer; font-weight:bold; }
+header { text-align:center; margin-bottom:30px; }
+h1 { font-size:3rem; letter-spacing:0.3em; text-transform:uppercase; }
+.hero-text { font-style:italic; font-size:1.2rem; }
+section { margin-bottom:30px; text-align:center; }
+.social-icons { display:flex; justify-content:center; gap:20px; }
+.social-icons img { width:40px; height:40px; filter:invert(100%); }
+.directions-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; }
+.card { background:rgba(255,255,255,0.05); border-radius:12px; padding:15px; }
+.cta { text-align:center; margin:30px 0; }
+.cta-button { background:#fff; color:#1a2a1a; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold; }
+.contact-blocks { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.contact-block { background:rgba(255,255,255,0.05); border-radius:12px; padding:15px; }
+footer { text-align:center; margin-top:30px; font-size:0.9rem; }
+
 
 /* Перемикач мов */
 .lang-switch {
