@@ -40,6 +40,7 @@ function openModal(id) {
   }
 }
 
+// Закриття модального вікна
 function closeModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
@@ -49,7 +50,6 @@ function closeModal(id) {
     }, 300); // час відповідає transition у CSS
   }
 }
-
 
 // Закриття при кліку на фон
 window.onclick = function(event) {
@@ -70,4 +70,3 @@ document.addEventListener("keydown", function(event) {
     }
   }
 });
-
