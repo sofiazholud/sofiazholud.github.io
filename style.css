@@ -115,18 +115,20 @@ h2 {
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;   /* вертикальне вирівнювання */
+  justify-content: center; /* горизонтальне вирівнювання */
 }
 .modal-content {
   background: #1a2a1a;
   color: #fff;
-  margin: 5% auto;        /* менший відступ зверху */
-  padding: 30px;          /* більше відступів */
+  padding: 30px;
   border-radius: 12px;
-  width: 80%;             /* ширше вікно */
-  max-width: 900px;       /* збільшена максимальна ширина */
+  width: 80%;
+  max-width: 900px;
   text-align: left;
-  line-height: 1.8;       /* більше повітря між рядками */
-  font-size: 1.1rem;      /* трохи більший текст */
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 .modal-content h2 {
   margin-top: 0;
