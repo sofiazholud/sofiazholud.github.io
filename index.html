@@ -53,108 +53,113 @@
 </div>
 
   <!-- Ішвара Йога -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="ishvara-yoga.jpg" alt="Ishvara Yoga">
-        <p>Ішвара Йога</p>
-      </div>
-      <div class="card-back">
-        <p>Глибока практика, що поєднує фізичні асани та медитацію для гармонізації внутрішнього стану.</p>
-      </div>
-    </div>
+  <div class="card" onclick="openModal('ishvara-yoga')">
+    <img src="ishvara-yoga.jpg" alt="Ishvara Yoga">
+    <p>Ішвара Йога</p>
   </div>
+            
+<div id="ishvara-yoga" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('ishvara-yoga')">&times;</span>
+        <h2>Ішвара Йога</h2>
+        <p>Глибока практика, що поєднує фізичні вправи та медитацію для гармонізації внутрішнього стану.</p>
+    </div>
+</div>
 
   <!-- Йога Айенгара -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="iyengar-yoga.jpg" alt="Iyengar Yoga">
-        <p>Йога Айенгара</p>
-      </div>
-      <div class="card-back">
-        <p>Методика з акцентом на точність виконання асан та використання допоміжних матеріалів.</p>
-      </div>
-    </div>
+  <div class="card" onclick="openModal('iyengar-yoga')">
+      <img src="iyengar-yoga.jpg" alt="Iyengar Yoga">
+      <p>Йога Айенгара</p>
   </div>
+            
+<div id="iyengar-yoga" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('iyengar-yoga')">&times;</span>
+        <h2>Йога Айенгара</h2>
+        <p>Практика з акцентом на точність виконання асан та використання допоміжних матеріалів.</p>
+    </div>
+</div>
 
   <!-- Пілатес -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="pilates.JPG" alt="Pilates">
-        <p>Пілатес</p>
-      </div>
-      <div class="card-back">
-        <p>Система вправ для розвитку сили, гнучкості та контролю над тілом.</p>
-      </div>
+  <div class="card" onclick="openModal('pilates')">
+      <img src="pilates.JPG" alt="Pilates">
+      <p>Пілатес</p>
     </div>
-  </div>
+            
+<div id="pilates" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('pilates')">&times;</span>
+        <h2>Пілатес</h2>
+        <p>Система вправ для розвитку сили, гнучкості та контролю над тілом.</p>
+    </div>
+</div>
 
   <!-- Флай Пілатес -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="fly-pilates.JPG" alt="Fly Pilates">
-        <p>Флай Пілатес</p>
-      </div>
-      <div class="card-back">
-        <p>Поєднання пілатесу та гамака для роботи з глибинними м’язами та балансом.</p>
-      </div>
+  <div class="card" onclick="openModal('fly-pilates')">
+      <img src="fly-pilates.JPG" alt="Fly Pilates">
+      <p>Флай Пілатес</p>
     </div>
-  </div>
+<div id="fly-pilates" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('fly-pilates')">&times;</span>
+        <h2>Флай Пілатес</h2>
+        <p>Поєднання пілатесу та гамака для роботи з глибокими м'язами та балансом.</p>
+    </div>
+</div>
+      
 
   <!-- Функціональні тренування -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
+   <div class="card" onclick="openModal('functional-training')">
         <img src="functional-training.JPG" alt="Functional Training">
         <p>Функціональні тренування</p>
       </div>
-      <div class="card-back">
-        <p>Комплекс вправ для розвитку витривалості, сили та координації у повсякденному житті.</p>
-      </div>
+<div id="functional-training" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('functional-training')">&times;</span>
+        <h2>Функціональні тренування</h2>
+        <p>Комплекс вправ для розвитку сили, витривалості та координації у повсякденному житті.</p>
     </div>
-  </div>
+</div>
 
   <!-- Флай Кідс -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
+  <div class="card" onclick="openModal('fly-class')">
         <img src="kids-fly-yoga.jpg" alt="Kids Fly Yoga">
         <p>Флай Кідс</p>
       </div>
-      <div class="card-back">
-        <p>Весела та безпечна практика для дітей, що розвиває гнучкість і впевненість у собі.</p>
+<div id="fly-class" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('fly-class')">&times;</span>
+        <h2>Флай Клас</h2>
+        <p>Заняття у гамаках для дітей та дорослих, що поєднують гру та фізичну активність.</p>
       </div>
     </div>
-  </div>
 
   <!-- Йога для вагітних -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
+  <div class="card" onclick="openModal('pregnancy-yoga')">
         <img src="pregnancy-yoga.jpg" alt="Pregnancy Yoga">
         <p>Йога для вагітних</p>
       </div>
-      <div class="card-back">
-        <p>М’які вправи для підтримки фізичного та емоційного стану під час вагітності та після пологів.</p>
+      <div id="pregnancy-yoga" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('pregnancy-yoga')">&times;</span>
+        <h2>Йога для вагітних</h2>
+        <p>М'які практики для підтримки фізичного та емоційного стану під час вагітності.</p>
       </div>
     </div>
-  </div>
 
   <!-- Адхо-йога -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
+  <div class="card" onclick="openModal('adho-yoga')">
         <img src="ADHOyoga.jpg" alt="Adho Yoga">
         <p>Адхо-йога</p>
       </div>
-      <div class="card-back">
-        <p>Практика з акцентом на баланс, силу та внутрішню концентрацію.</p>
+     <div id="aloha-yoga" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('aloha-yoga')">&times;</span>
+        <h2>Алоха-йога</h2>
+        <p>Практика з елементами релаксації та позитивної енергії, що дарує відчуття гармонії.</p>
       </div>
     </div>
-  </div>
+
 </div>
     </section>
 
