@@ -91,7 +91,8 @@ h2 {
 }
 .card img {
     width: 100%;
-    height: auto;
+    display:block;
+    height: 200pxt;
     object-fit: cover;
 }
 
