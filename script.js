@@ -58,3 +58,10 @@ function toggleText(button) {
         button.innerText = (document.documentElement.lang === "en") ? "More details" : "Детальніше";
     }
 }
+
+// Додаємо слухач для мобільних
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
