@@ -2,78 +2,70 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERRA SPACE</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Перемикач мов -->
     <div class="lang-switch">
         <button onclick="setLanguage('ua')">UA</button>
         <button onclick="setLanguage('en')">EN</button>
     </div>
 
-    <!-- Шапка -->
     <header>
         <h1 id="title">ERRA SPACE</h1>
         <p class="hero-text" id="subtitle">Простір, який піклується не лише про фізичний, а і про внутрішній стан.</p>
     </header>
 
-    <!-- Соцмережі -->
     <section>
-        <h2 id="projects-title">Ми в соцмережах</h2>
+        <h2 id="social-title">Ми в соцмережах</h2>
         <div class="social-icons">
             <a href="https://www.instagram.com/erraspace.ua" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
             <a href="https://www.facebook.com/erraspace.ua" target="_blank"><img src="facebook.svg" alt="Facebook"></a>
             <a href="https://www.tiktok.com/@erraspace.ua" target="_blank"><img src="tiktok.svg" alt="TikTok"></a>
-            <a href="https://www.threads.net/@erraspace.ua" target="_blank"><img src="threads.svg" alt="Threads"></a>
             <a href="https://t.me/ERRA_SPASE" target="_blank"><img src="telegram.svg" alt="Telegram"></a>
         </div>
     </section>
 
-    <!-- Напрямки -->
     <section>
         <h2 id="directions-title">Напрямки</h2>
         <div class="directions-grid">
-            <div class="card"><img src="fly-yoga.JPG" alt="Fly Yoga"><p id="fly-yoga">Флай Йога</p></div>
-            <div class="card"><img src="ishvara-yoga.jpg" alt="Ishvara Yoga"><p id="ishvara-yoga">Ішвара Йога</p></div>
-            <div class="card"><img src="iyengar-yoga.jpg" alt="Iyengar Yoga"><p id="iyengar-yoga">Йога Айенгара</p></div>
-            <div class="card"><img src="pilates.JPG" alt="Pilates"><p id="pilates">Пілатес</p></div>
-            <div class="card"><img src="fly-pilates.JPG" alt="Fly Pilates"><p id="fly-pilates">Флай Пілатес</p></div>
-            <div class="card"><img src="functional-training.JPG" alt="Functional Training"><p id="functional-training">Функціональні тренування</p></div>
-            <div class="card"><img src="kids-fly-yoga.jpg" alt="Kids Fly Yoga"><p id="kids-fly-yoga">Флай Кідс</p></div>
-            <div class="card"><img src="pregnancy-yoga.jpg" alt="Pregnancy Yoga"><p id="pregnancy-yoga">Йога для вагітних та післяпологова йога</p></div>
-            <div class="card"><img src="ADHOyoga.jpg" alt="ADHO yoga"><p id="adho-yoga">Адхо-йога</p></div>    
-        </div>
+            
+            <div class="card">
+                <img src="fly-yoga.jpg" alt="Fly Yoga">
+                <p id="fly-yoga">Флай Йога</p>
+                <button class="details-btn" onclick="toggleText(this)" id="btn-more-1">Детальніше</button>
+                <div class="description-text">
+                    <p id="fly-yoga-desc">Це унікальне заняття в гамаках, яке допомагає розслабити хребет та відчути невагомість.</p>
+                </div>
+            </div>
+
+            </div>
     </section>
 
-    <!-- Контакти -->
+    <div class="cta">
+        <a href="https://instasport.ua/uk/portal/erraspace" class="cta-button" id="cta-button">Записатися на заняття</a>
+    </div>
+
     <section>
         <h2 id="contacts-title">Контакти</h2>
         <div class="contact-blocks">
-
-            <!-- Адреса 1 -->
             <div class="contact-block">
-                <p id="address">📍 Вишгород, пр. Шевченка 6А</p>
-                <p>📞 <span id="phone-label">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Вишгород,+пр.+Шевченка+6А" target="_blank" class="nav-button">Навігація</a>
+                <p id="address-1">📍 Вишгород, пр. Шевченка 6А</p>
+                <p>📞 <span id="phone-label-1">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+                <a href="https://maps.google.com" target="_blank" class="nav-button" id="nav-btn-1">Навігація</a>
             </div>
 
-            <!-- Адреса 2 -->
             <div class="contact-block">
-                <p id="address2">📍 КМ Межріччя, вул. Фісташкова 60</p>
-                <p>📞 <span id="phone-label2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=КМ+Межріччя,+вул.+Фісташкова+60" target="_blank" class="nav-button">Навігація</a>
-                <p>Instagram: <a href="https://www.instagram.com/erraspace_mr" target="_blank">@erraspace_mr</a></p>
+                <p id="address-2">📍 КМ Межріччя, вул. Фісташкова 60</p>
+                <p>📞 <span id="phone-label-2">Адміністратор:</span> <a href="tel:+380632072462">+380 63 207 24 62</a></p>
+                <a href="https://maps.google.com" target="_blank" class="nav-button" id="nav-btn-2">Навігація</a>
             </div>
-
         </div>
     </section>
 
-    <!-- Футер -->
     <footer>
         <p id="footer-text">© 2026 Erra Studio. Всі права захищені.</p>
     </footer>
