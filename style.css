@@ -1,3 +1,4 @@
+/* Базові стилі */
 body {
   font-family: 'Cormorant Garamond', serif;
   background-color: #1a2a1a;
@@ -24,9 +25,7 @@ body {
   font-size: 1rem;
   transition: background 0.3s;
 }
-.lang-switch button:hover {
-  background: #ddd;
-}
+.lang-switch button:hover { background: #ddd; }
 
 /* Шапка */
 header {
@@ -78,9 +77,7 @@ h2 {
   filter: invert(100%);
   transition: transform 0.3s;
 }
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+.social-icons img:hover { transform: scale(1.2); }
 
 /* Напрямки */
 .directions-grid {
@@ -98,7 +95,19 @@ h2 {
   transition: transform 0.3s;
 }
 .card:hover { transform: scale(1.05); }
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.card p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+}
 
+/* Модальне вікно */
 .modal {
   display: none;
   position: fixed;
@@ -118,19 +127,15 @@ h2 {
   text-align: left;
   line-height: 1.6;
 }
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
 .close {
   float: right;
   font-size: 2rem;
   cursor: pointer;
-}
-
-
-/* 📱 Для мобільних — flip при тапі */
-@media (max-width: 768px) {
-  .card { cursor: pointer; }
-  .card.active .card-inner {
-    transform: rotateY(180deg);
-  }
 }
 
 /* Контакти */
@@ -147,22 +152,13 @@ h2 {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   text-align: center;
 }
-.contact-block p {
-  margin: 10px 0;
-  font-size: 1rem;
-}
+.contact-block p { margin: 10px 0; font-size: 1rem; }
 .contact-block iframe {
   width: 100%;
   height: 200px;
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.4);
-}
-.card-back p {
-  front-size: 0.9 !important;
-  line--height: 1.4;
-  margin: 0;
-  width: 100%;
 }
 
 /* Кнопка навігації */
@@ -177,9 +173,7 @@ h2 {
   font-weight: bold;
   transition: background 0.3s;
 }
-.nav-button:hover {
-  background: #ddd;
-}
+.nav-button:hover { background: #ddd; }
 
 /* Телефон */
 a[href^="tel"] {
@@ -187,9 +181,7 @@ a[href^="tel"] {
   text-decoration: none !important;
   font-weight: bold;
 }
-a[href^="tel"]:hover {
-  color: #ddd !important;
-}
+a[href^="tel"]:hover { color: #ddd !important; }
 
 /* Instagram у контактах */
 .contact-block a[href*="instagram.com"] {
@@ -198,15 +190,10 @@ a[href^="tel"]:hover {
   font-style: italic;
   font-weight: bold;
 }
-.contact-block a[href*="instagram.com"]:hover {
-  color: #ddd !important;
-}
+.contact-block a[href*="instagram.com"]:hover { color: #ddd !important; }
 
 /* CTA */
-.cta {
-  text-align: center;
-  margin: 30px 0;
-}
+.cta { text-align: center; margin: 30px 0; }
 .cta-button {
   display: inline-block;
   margin: 10px;
@@ -238,9 +225,7 @@ footer {
 footer { position: relative; bottom: 0; width: 100%; }
 
 /* Анімація */
-.card, section, footer {
-  animation: fadeInUp 0.8s ease both;
-}
+.card, section, footer { animation: fadeInUp 0.8s ease both; }
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -252,7 +237,7 @@ footer { position: relative; bottom: 0; width: 100%; }
   h1 { font-size: 2rem; letter-spacing: 0.2em; }
   h2 { font-size: 1.4rem; letter-spacing: 1px; }
   .directions-grid { grid-template-columns: 1fr; }
-  .card-front img { max-height: 180px; }
+  .card img { max-height: 180px; }
   .cta-button {
     display: block;
     width: 100%;
