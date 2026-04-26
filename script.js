@@ -37,7 +37,6 @@ function openModal(id) {
   if (modal) {
     modal.classList.add("show");
     modal.classList.remove("hide");
-    modal.style.display = "flex";
   }
 }
 
@@ -47,10 +46,10 @@ function closeModal(id) {
     modal.classList.add("hide");
     setTimeout(() => {
       modal.classList.remove("show");
-      modal.style.display = "none";
     }, 300); // час відповідає transition у CSS
   }
 }
+
 
 // Закриття при кліку на фон
 window.onclick = function(event) {
