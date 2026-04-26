@@ -108,6 +108,7 @@ h2 {
 }
 
 /* Модальне вікно */
+/* Модальне вікно */
 .modal {
   display: none;              /* приховане за замовчуванням */
   position: fixed;
@@ -122,13 +123,16 @@ h2 {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .modal.show {
-  display: flex;
+  display: flex;              /* показуємо тільки коли треба */
   opacity: 1;
 }
+
 .modal.hide {
   opacity: 0;
 }
+
 .modal-content {
   background: #1a2a1a;
   color: #fff;
@@ -139,17 +143,21 @@ h2 {
   text-align: left;
   line-height: 1.8;
   font-size: 1.1rem;
+
   transform: scale(0.95);
   transition: transform 0.3s ease;
 }
+
 .modal.show .modal-content {
-  transform: scale(1); /* ефект "виростання" */
+  transform: scale(1); /* ефект "виростання" при відкритті */
 }
+
 .modal-content h2 {
   margin-top: 0;
   font-size: 2rem;
   letter-spacing: 1px;
 }
+
 .close {
   float: right;
   font-size: 2.4rem;
