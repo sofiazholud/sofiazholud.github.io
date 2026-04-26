@@ -6,22 +6,6 @@ body {
     padding: 20px;
     line-height: 1.6;
 }
-.lang-switch { text-align: right; margin-bottom: 15px; }
-.lang-switch button { background:#fff; color:#1a2a1a; border:none; padding:6px 12px; margin-left:5px; border-radius:6px; cursor:pointer; font-weight:bold; }
-header { text-align:center; margin-bottom:30px; }
-h1 { font-size:3rem; letter-spacing:0.3em; text-transform:uppercase; }
-.hero-text { font-style:italic; font-size:1.2rem; }
-section { margin-bottom:30px; text-align:center; }
-.social-icons { display:flex; justify-content:center; gap:20px; }
-.social-icons img { width:40px; height:40px; filter:invert(100%); }
-.directions-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; }
-.card { background:rgba(255,255,255,0.05); border-radius:12px; padding:15px; }
-.cta { text-align:center; margin:30px 0; }
-.cta-button { background:#fff; color:#1a2a1a; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold; }
-.contact-blocks { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-.contact-block { background:rgba(255,255,255,0.05); border-radius:12px; padding:15px; }
-footer { text-align:center; margin-top:30px; font-size:0.9rem; }
-
 
 /* Перемикач мов */
 .lang-switch {
@@ -32,12 +16,15 @@ footer { text-align:center; margin-top:30px; font-size:0.9rem; }
     background: #ffffff;
     color: #1a2a1a;
     border: none;
-    padding: 6px 15px;
+    padding: 6px 12px;
     margin-left: 5px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    -webkit-appearance: none;
+    transition: background 0.3s;
+}
+.lang-switch button:hover {
+    background: #ddd;
 }
 
 /* Шапка */
@@ -53,12 +40,12 @@ h1 {
     font-size: 3rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 .hero-text {
     font-style: italic;
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem; /* збільшено */
+    color: rgba(255, 255, 255, 0.9); /* контрастніше */
     max-width: 80%;
     margin: 0 auto;
 }
@@ -73,7 +60,7 @@ section {
 }
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
@@ -82,74 +69,136 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 20px;
 }
 .social-icons img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     filter: invert(100%);
     transition: transform 0.3s;
 }
+.social-icons img:hover {
+    transform: scale(1.2);
+}
 
-/* Напрямки (Grid) */
+/* Напрямки */
 .directions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 .card {
     background: rgba(255,255,255,0.05);
     border-radius: 12px;
     overflow: hidden;
-    padding-bottom: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s;
 }
 .card img {
     width: 100%;
-    display:block;
-    height: 200pxt;
+    height: 200px;
     object-fit: cover;
 }
-
-/* Кнопки Детальніше */
-.details-btn {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.4);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
+.card p {
     margin: 10px 0;
-    font-family: inherit;
+    font-size: 1.2rem; /* збільшено */
+    font-style: italic;
+    color: rgba(255,255,255,0.9); /* контрастніше */
 }
-.description-text {
-    display: none;
-    padding: 10px 15px;
-    font-size: 0.95rem;
-    text-align: left;
-    background: rgba(0,0,0,0.2);
+.card:hover {
+    transform: scale(1.05);
 }
 
-/* Кнопка запису */
+/* Контакти */
+.contact-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+.contact-block {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.contact-block p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.contact-block iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+/* Кнопка навігації */
+.nav-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #1a2a1a !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.nav-button:hover {
+    background: #ddd;
+}
+
+/* Телефон */
+a[href^="tel"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+a[href^="tel"]:hover {
+    color: #ddd !important;
+}
+
+/* Instagram у контактах */
+.contact-block a[href*="instagram.com"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-style: italic;
+    font-weight: bold;
+}
+.contact-block a[href*="instagram.com"]:hover {
+    color: #ddd !important;
+}
+
+/* CTA */
 .cta {
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 .cta-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
     background: #ffffff;
     color: #1a2a1a;
-    padding: 15px 35px;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 30px;
     font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
+    transition: background 0.3s;
+}
+.cta-button:hover {
+    background: #ddd;
 }
 
-/* Адаптація для МОБІЛЬНИХ */
-@media (max-width: 600px) {
-    h1 { font-size: 1.8rem; letter-spacing: 0.1em; }
-    .hero-text { font-size: 1rem; max-width: 100%; }
-    .directions-grid { grid-template-columns: 1fr; }
-    header, section { padding: 25px 15px; }
+/* Футер */
+footer {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
 }
