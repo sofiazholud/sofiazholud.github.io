@@ -100,7 +100,7 @@ h2 {
 .card-inner {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 320px; /* трохи більше місця для тексту */
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -130,18 +130,19 @@ h2 {
   background: rgba(255,255,255,0.1);
   color: #fff;
   transform: rotateY(180deg);
-  display: flex;              /* робимо контейнер гнучким */
-  align-items: center;        /* вирівнює текст по вертикалі */
-  justify-content: center;    /* вирівнює по горизонталі */
-  padding: 20px;              /* відступи від країв */
-  text-align: center;         /* текст рівно по центру */
-  font-size: 1rem;
-  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: justify;   /* рівняє текст по ширині */
 }
 .card-back p {
   margin: 0;
-  max-width: 90%;             /* щоб текст не розтягувався на всю ширину */
+  font-size: 0.95rem;
+  line-height: 1.5;
   word-break: break-word;
+  hyphens: auto;
+  max-width: 90%;        /* щоб текст не торкався країв */
 }
 
 
