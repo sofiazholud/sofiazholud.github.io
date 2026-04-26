@@ -257,6 +257,7 @@ footer { position: relative; bottom: 0; width: 100%; }
     display: block;
     width: 100%;
     margin: 15px 0;
+    padding: 16px 32px;
     font-size: 1.1rem;
   }
 
@@ -265,6 +266,19 @@ footer { position: relative; bottom: 0; width: 100%; }
     grid-template-columns: 1fr;
   }
 
+.lang-switch button {
+    padding: 12px 20px !important;   /* більші відступи */
+    font-size: 1.1rem !important;    /* більший текст */
+  }
+
+ /* Кнопки навігації */
+.nav-button {
+    padding: 14px 28px !important;   /* більше місця для пальця */
+    font-size: 1.2rem !important;    /* більший текст */
+    display: block;                  /* щоб займала всю ширину */
+    margin: 15px auto;               /* вирівнювання по центру */
+  }
+    
   /* Іконки соцмереж — трохи менші */
   .social-icons img {
     width: 32px;
