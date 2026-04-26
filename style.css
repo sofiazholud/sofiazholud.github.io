@@ -127,14 +127,10 @@ h2 {
   color: rgba(255,255,255,0.9);
 }
 .card-back p {
-  margin: 0;
-  padding: 0;
-  font-size: 0.95rem;       /* трохи менший шрифт */
-  line-height: 1.5;         /* більше повітря між рядками */
-  text-align: justify;      /* рівняє текст по ширині */
-  word-spacing: 0.25em;     /* додає відстань між словами */
-  hyphens: auto;            /* переносить довгі слова з дефісом */
-  word-break: break-word;   /* не дає словам виходити за межі */
+  word-break: break-word;   /* переносить довгі слова */
+  hyphens: auto;            /* додає дефіси при переносі */
+  text-align: justify;      /* вирівнює по ширині */
+  line-height: 1.6;         /* більше повітря між рядками */
 }
 
 
