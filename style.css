@@ -126,11 +126,22 @@ h2 {
   font-style: italic;
   color: rgba(255,255,255,0.9);
 }
+.card-back {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;              /* робимо контейнер гнучким */
+  align-items: center;        /* вирівнює текст по вертикалі */
+  justify-content: center;    /* вирівнює по горизонталі */
+  padding: 20px;              /* відступи від країв */
+  text-align: center;         /* текст рівно по центру */
+  font-size: 1rem;
+  line-height: 1.4;
+}
 .card-back p {
-  word-break: break-word;   /* переносить довгі слова */
-  hyphens: auto;            /* додає дефіси при переносі */
-  text-align: justify;      /* вирівнює по ширині */
-  line-height: 1.6;         /* більше повітря між рядками */
+  margin: 0;
+  max-width: 90%;             /* щоб текст не розтягувався на всю ширину */
+  word-break: break-word;
 }
 
 
