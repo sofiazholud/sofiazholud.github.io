@@ -38,7 +38,6 @@ const translations = {
 };
 
 function setLanguage(lang) {
-    // проходимо по всіх ключах у словнику перекладів
     for (const key in translations[lang]) {
         const el = document.getElementById(key);
         if (el) {
