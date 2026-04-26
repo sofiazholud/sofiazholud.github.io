@@ -22,7 +22,20 @@ const translations = {
         "subtitle": "A space that cares not only about the physical but also the inner state.",
         "social-title": "Social Media",
         "directions-title": "Directions",
-        "contacts-title": "Contacts
+        "contacts-title": "Contacts",
+        "address-1": "📍 Vyshhorod, 6A Shevchenka Ave",
+        "address-2": "📍 Mezhyrichchia, 60 Fistashkova St",
+        "phone-label-1": "Administrator:",
+        "phone-label-2": "Administrator:",
+        "nav-btn-1": "Navigation",
+        "nav-btn-2": "Navigation",
+        "cta-button": "Book a class",
+        "footer-text": "© 2026 Erra Studio. All rights reserved.",
+        "fly-yoga": "Fly Yoga",
+        "fly-yoga-desc": "A unique workout in hammocks that helps relax the spine and feel weightless.",
+        "btn-more-1": "More details"
+    }
+};
 
 // Функція перекладу
 function setLanguage(lang) {
