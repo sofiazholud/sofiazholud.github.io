@@ -127,15 +127,16 @@ h2 {
   color: rgba(255,255,255,0.9);
 }
 .card-back {
-  background: rgba(255,255,255,0.1);
-  color: #fff;
+  background: rgba(0,0,0,0.8);
+  color: #ffffff;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  font-size: 1rem;
+  font-size: border-box;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* Ефект перевороту */
@@ -175,6 +176,11 @@ h2 {
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+.card-back p {
+  front-size: 0.9 !important;
+  line--height: 1.4;
+  margin: 0;
 }
 
 /* Кнопка навігації */
