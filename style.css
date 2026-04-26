@@ -124,11 +124,11 @@ h2 {
   color: #fff;
   padding: 30px;
   border-radius: 12px;
-  width: 80%;
+  width: 90%;
   max-width: 900px;
   text-align: left;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .modal-content h2 {
   margin-top: 0;
@@ -252,12 +252,12 @@ footer { position: relative; bottom: 0; width: 100%; }
     width: 95%;          /* майже вся ширина екрану */
     height: auto;        /* автоматична висота */
     margin: 15% auto;    /* більше відступів зверху */
-    font-size: 1.2rem;   /* збільшений текст */
-    line-height: 1.8;    /* більше повітря між рядками */
-    padding: 24px;       /* комфортні відступи */
+    font-size: 1.3rem;   /* збільшений текст */
+    line-height: 1.9;    /* більше повітря між рядками */
+    padding: 28px;       /* комфортні відступи */
   }
   .modal-content h2 {
-    font-size: 1.6rem;   /* більший заголовок */
+    font-size: 1.8rem;   /* більший заголовок */
   }
   .close {
     font-size: 2.4rem;   /* велика кнопка закриття */
