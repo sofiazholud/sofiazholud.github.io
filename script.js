@@ -31,17 +31,14 @@ function setLanguage(lang) {
   document.getElementById("phone-label-2").textContent = translations[lang].phoneLabel2;
 }
 
-// Відкриття модального вікна
 function openModal(id) {
-  document.getElementById(id).style.display = "flex"; // flex для центрування
+  document.getElementById(id).style.display = "flex";
 }
 
-// Закриття модального вікна
 function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
 
-// Закриття при кліку на фон
 window.onclick = function(event) {
   const modals = document.getElementsByClassName("modal");
   for (let i = 0; i < modals.length; i++) {
@@ -51,7 +48,6 @@ window.onclick = function(event) {
   }
 };
 
-// Закриття по клавіші Esc
 document.addEventListener("keydown", function(event) {
   if (event.key === "Escape") {
     const modals = document.getElementsByClassName("modal");
@@ -60,3 +56,4 @@ document.addEventListener("keydown", function(event) {
     }
   }
 });
+
