@@ -16,11 +16,12 @@ body {
     background: #ffffff;
     color: #1a2a1a;
     border: none;
-    padding: 6px 12px;
+    padding: 10px 18px;
     margin-left: 5px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    front-size: 1rem;
     transition: background 0.3s;
 }
 .lang-switch button:hover {
@@ -181,12 +182,13 @@ a[href^="tel"]:hover {
 .cta-button {
     display: inline-block;
     margin: 10px;
-    padding: 12px 24px;
+    padding: 16px 28px;
     background: #ffffff;
     color: #1a2a1a;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
     transition: background 0.3s;
 }
 .cta-button:hover {
