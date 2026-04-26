@@ -94,62 +94,36 @@ h2 {
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
   transition: transform 0.3s;
-  perspective: 1000px;
 }
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.card-front {
-  background: rgba(255,255,255,0.05);
-}
-.card-front img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-}
-.card-front p {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: rgba(255,255,255,0.9);
-}
-.card-back {
+.card:hover { transform: scale(1.05); }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
+}
+.modal-content {
+  background: #1a2a1a;
   color: #fff;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 15px;
-  font-size: border-box;
-  line-height: 1.4;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.6;
+}
+.close {
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-/* Ефект перевороту */
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
 
 /* 📱 Для мобільних — flip при тапі */
 @media (max-width: 768px) {
