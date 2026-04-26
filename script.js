@@ -35,15 +35,20 @@ function setLanguage(lang) {
 function openModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
-    modal.style.display = "flex"; // flex для центрування
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+    modal.style.display = "flex";
   }
 }
 
-// Закриття модального вікна
 function closeModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
-    modal.style.display = "none";
+    modal.classList.add("hide");
+    setTimeout(() => {
+      modal.classList.remove("show");
+      modal.style.display = "none";
+    }, 300); // час відповідає transition у CSS
   }
 }
 
@@ -52,17 +57,18 @@ window.onclick = function(event) {
   const modals = document.getElementsByClassName("modal");
   for (let i = 0; i < modals.length; i++) {
     if (event.target === modals[i]) {
-      modals[i].style.display = "none";
+      closeModal(modals[i].id);
     }
   }
 };
 
-// Закриття по клавіші Esc
+// Закриття по Esc
 document.addEventListener("keydown", function(event) {
   if (event.key === "Escape") {
     const modals = document.getElementsByClassName("modal");
     for (let i = 0; i < modals.length; i++) {
-      modals[i].style.display = "none";
+      closeModal(modals[i].id);
     }
   }
 });
+
