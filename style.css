@@ -258,23 +258,23 @@ footer { position: relative; bottom: 0; width: 100%; }
 }
 
 /* 📱 Мобільна адаптивність */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   section { padding: 20px 10px; }
   h1 { font-size: 2rem; letter-spacing: 0.2em; }
   h2 { font-size: 1.4rem; letter-spacing: 1px; }
   .directions-grid { grid-template-columns: 1fr; }
   .card img { max-height: 180px; }
 
-  .card p { font-size: 1.3rem; }
+  .card p { font-size: 1.4rem; }
 
   .modal-content {
-    width: 95%;
-    font-size: 1.3rem;
-    line-height: 1.9;
-    padding: 28px;
+    width: 150%;
+    font-size: 1.6rem;
+    line-height: 2;
+    padding: 30px;
   }
-  .modal-content h2 { font-size: 1.8rem; }
-  .close { font-size: 2.6rem; }
+  .modal-content h2 { font-size: 2.2rem; }
+  .close { font-size: 3rem; }
 
   .cta-button {
     display: block;
