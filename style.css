@@ -238,24 +238,38 @@ footer { position: relative; bottom: 0; width: 100%; }
   h2 { font-size: 1.4rem; letter-spacing: 1px; }
   .directions-grid { grid-template-columns: 1fr; }
   .card img { max-height: 180px; }
+
+  /* Картки */
+  .card p {
+    font-size: 1.3rem;   /* більший текст під фото */
+  }
+
+  /* Модальне вікно */
+  .modal-content {
+    width: 95%;          /* майже вся ширина екрану */
+    height: auto;        /* автоматична висота */
+    margin: 15% auto;    /* більше відступів зверху */
+    font-size: 1.2rem;   /* збільшений текст */
+    line-height: 1.8;    /* більше повітря між рядками */
+    padding: 24px;       /* комфортні відступи */
+  }
+  .modal-content h2 {
+    font-size: 1.6rem;   /* більший заголовок */
+  }
+  .close {
+    font-size: 2.4rem;   /* велика кнопка закриття */
+  }
+
+  /* CTA‑кнопка */
   .cta-button {
     display: block;
     width: 100%;
     margin: 15px 0;
-    padding: 16px 32px;
-    font-size: 1.1rem;
+    padding: 18px 34px;
+    font-size: 1.2rem;
   }
-  .contact-blocks { grid-template-columns: 1fr; }
-  .lang-switch button {
-    padding: 12px 20px !important;
-    font-size: 1.1rem !important;
-  }
-  .nav-button {
-    padding: 14px 28px !important;
-    font-size: 1.2rem !important;
-    display: block;
-    margin: 15px auto;
-  }
+
+  /* Соцмережі */
   .social-icons img {
     width: 32px;
     height: 32px;
