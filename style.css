@@ -130,13 +130,14 @@ h2 {
   background: rgba(255,255,255,0.1);
   color: #fff;
   transform: rotateY(180deg);
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   font-size: 1rem;
   line-height: 1.6;
+  overflow-y: auto;
 }
 
 /* Ефект перевороту */
