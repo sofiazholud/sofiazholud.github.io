@@ -36,18 +36,21 @@
     <section>
         <h2 id="directions-title">Напрямки</h2>
         <div class="directions-grid">
-  <!-- Флай Йога -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="fly-yoga.JPG" alt="Fly Yoga">
-        <p>Флай Йога</p>
-      </div>
-      <div class="card-back">
-        <p>Практика з використанням гамака, що поєднує йогу та акробатику. Допомагає розвивати гнучкість і знімати напругу.</p>
-      </div>
-    </div>
+ <!-- Флай Йога -->
+<div class="card" onclick="openModal('fly-yoga')">
+  <img src="fly-yoga.JPG" alt="Fly Yoga">
+  <p>Флай Йога</p>
+</div>
+
+<!-- Модальне вікно -->
+<div id="fly-yoga" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('fly-yoga')">&times;</span>
+    <h2>Флай Йога</h2>
+    <p>Практика з використанням гамака, що поєднує йогу та акробатику. 
+       Допомагає розвивати гнучкість і знімати напругу.</p>
   </div>
+</div>
 
   <!-- Ішвара Йога -->
   <div class="card">
