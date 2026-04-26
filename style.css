@@ -115,29 +115,31 @@ h2 {
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
+
+  /* Центрування */
   display: flex;
-  align-items: center;   /* вертикальне вирівнювання */
-  justify-content: center; /* горизонтальне вирівнювання */
+  align-items: center;
+  justify-content: center;
 }
 .modal-content {
   background: #1a2a1a;
   color: #fff;
   padding: 30px;
   border-radius: 12px;
-  width: 90%;
+  width: 80%;
   max-width: 900px;
   text-align: left;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .modal-content h2 {
   margin-top: 0;
-  font-size: 2rem;        /* більший заголовок */
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 .close {
   float: right;
-  font-size: 2.4rem;      /* велика кнопка закриття */
+  font-size: 2.4rem;
   cursor: pointer;
 }
 
@@ -244,23 +246,21 @@ footer { position: relative; bottom: 0; width: 100%; }
 
   /* Картки */
   .card p {
-    font-size: 1.3rem;   /* більший текст під фото */
+    font-size: 1.3rem;
   }
 
   /* Модальне вікно */
   .modal-content {
-    width: 95%;          /* майже вся ширина екрану */
-    height: auto;        /* автоматична висота */
-    margin: 15% auto;    /* більше відступів зверху */
-    font-size: 1.3rem;   /* збільшений текст */
-    line-height: 1.9;    /* більше повітря між рядками */
-    padding: 28px;       /* комфортні відступи */
+    width: 95%;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    padding: 28px;
   }
   .modal-content h2 {
-    font-size: 1.8rem;   /* більший заголовок */
+    font-size: 1.8rem;
   }
   .close {
-    font-size: 2.4rem;   /* велика кнопка закриття */
+    font-size: 2.6rem;
   }
 
   /* CTA‑кнопка */
