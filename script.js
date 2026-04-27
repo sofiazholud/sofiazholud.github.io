@@ -96,7 +96,8 @@ const translations = {
     "modal-desc-pregnancy-yoga": "Gentle practices that support the physical condition and emotional balance of expectant mothers. Exercises are adapted for different pregnancy stages and help prepare the body for childbirth.",
     "modal-title-adho-yoga": "Adho Yoga",
     "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
-    "modal-title-privat-lesson": "A personalized training format tailored to your needs and fitness level"
+    "modal-title-privat-lesson": "Privat lesson",
+    "modal-desc-privat-lesson": "A personalized training format tailored to your needs and fitness level"
 }
 };
 
