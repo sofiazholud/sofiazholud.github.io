@@ -222,7 +222,7 @@ a[href^="tel"]:hover { color: #ddd !important; }
 .cta { text-align: center; margin: 30px 0; }
 .cta-button {
   display: inline-block;
-  margin: 15px 20px;
+  margin: 15px 40px;
   padding: 22px 38px;
   background: #ffffff;
   color: #1a2a1a;
