@@ -8,7 +8,20 @@ const translations = {
     footerText: "© 2026 Erra Studio. Всі права захищені.",
     phoneLabel1: "Адміністратор:",
     phoneLabel2: "Адміністратор:",
-    "dir-fly-yoga": "Флай Йога"
+    "dir-fly-yoga": "Флай Йога",
+    "dir-ishvara-yoga": "Ішвара Йога",
+    "dir-iyengar-yoga": "Йога Айенгара",
+    "dir-pilates": "Пілатес",
+    "dir-fly-pilates": "Флай Пілатес",
+    "dir-functional-training": "Функціональні тренування",
+    "dir-fly-class": "Флай Кідс",
+    "dir-pregnancy-yoga": "Йога для вагітних",
+    "dir-adho-yoga": "Адхо-йога",
+    "cta-button": "Записатися на заняття",
+    "address-1": "📍 Вишгород, пр. Шевченка 6А",
+    "address-2": "📍 КМ Межріччя, вул. Фісташкова 60",
+    "nav-btn-1": "Навігація",
+    "nav-btn-2": "Навігація"
   },
   en: {
     subtitle: "A space that cares not only about the physical but also the inner state.",
@@ -18,7 +31,20 @@ const translations = {
     footerText: "© 2026 Erra Studio. All rights reserved.",
     phoneLabel1: "Administrator:",
     phoneLabel2: "Administrator:",
-    "dir-fly-yoga": "Fly Yoga"
+    "dir-fly-yoga": "Fly Yoga",
+    "dir-ishvara-yoga": "Ishvara Yoga",
+    "dir-iyengar-yoga": "Iyengar Yoga",
+    "dir-pilates": "Pilates",
+    "dir-fly-pilates": "Fly Pilates",
+    "dir-functional-training": "Functional Training",
+    "dir-fly-class": "Fly Kids",
+    "dir-pregnancy-yoga": "Pregnancy Yoga",
+    "dir-adho-yoga": "Adho Yoga",
+    "cta-button": "Book a class",
+    "address-1": "📍 Vyshhorod, Shevchenka Ave 6A",
+    "address-2": "📍 KM Mezhrichchia, Fistashkova St 60",
+    "nav-btn-1": "Navigation",
+    "nav-btn-2": "Navigation"
   }
 };
 
