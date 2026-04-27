@@ -20,7 +20,7 @@ const translations = {
     "dir-fly-kids": "Флай Кідс",
     "dir-pregnancy-yoga": "Йога для вагітних",
     "dir-adho-yoga": "Адхо-йога",
-    "dir-privat-lesson": "Індивідуальні тренування",
+    "dir-private-lesson": "Індивідуальні тренування",
     "cta-button": "Записатися на заняття",
     "address-1": "📍 Вишгород, пр. Шевченка 6А",
     "address-2": "📍 КМ Міжріччя, вул. Фісташкова 60",
@@ -48,8 +48,8 @@ const translations = {
     "modal-desc-pregnancy-yoga": "М’які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.",
     "modal-title-adho-yoga": "Адхо-йога",
     "modal-desc-adho-yoga": "Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.",
-    "modal-title-privat-lesson": "Індивідуальні тренування",
-    "modal-desc-privat-lesson": "Персональний формат тренування, який враховує ваші потреби та рівень підготовки."
+    "modal-title-private-lesson": "Індивідуальні тренування",
+    "modal-desc-private-lesson": "Персональний формат тренування, який враховує ваші потреби та рівень підготовки."
   },
   en: {
     subtitle: "A space that cares not only about the physical but also the inner state.",
@@ -68,7 +68,7 @@ const translations = {
     "dir-fly-kids": "Fly Kids",
     "dir-pregnancy-yoga": "Pregnancy Yoga",
     "dir-adho-yoga": "Adho Yoga",
-    "dir-privat-lesson": "Privat Lesson"
+    "dir-private-lesson": "Private Lesson",
     "cta-button": "Book a class",
     "address-1": "📍 Vyshhorod, Shevchenka Ave 6A",
     "address-2": "📍 KM Mizhrichchia, Fistashkova St 60",
@@ -96,8 +96,8 @@ const translations = {
     "modal-desc-pregnancy-yoga": "Gentle practices that support the physical condition and emotional balance of expectant mothers. Exercises are adapted for different pregnancy stages and help prepare the body for childbirth.",
     "modal-title-adho-yoga": "Adho Yoga",
     "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
-    "modal-title-privat-lesson": "Privat lesson",
-    "modal-desc-privat-lesson": "A personalized training format tailored to your needs and fitness level"
+    "modal-title-private-lesson": "Private lesson",
+    "modal-desc-private-lesson": "A personalized training format tailored to your needs and fitness level"
 }
 };
 
