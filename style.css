@@ -337,8 +337,7 @@ footer {
   }
 
   /* Модалка на мобільному — вимикаємо (використовуємо акордеон) */
-  .modal 
-  .modal.show { display: none !important; }
+  .modal  { display: none !important; }
 
   .cta-button {
     display: block;
