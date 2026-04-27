@@ -31,23 +31,79 @@ function setLanguage(lang) {
   document.getElementById("phone-label-2").textContent = translations[lang].phoneLabel2;
 }
 
-// Відкриття модального вікна
-function openModal(id) {
+// Перевірка мобільного
+function isMobile() {
+  return window.innerWidth <= 480;
+}
+
+// Відкриття/закриття акордеону під карткою (мобільний)
+function toggleAccordion(id) {
+  const card = document.querySelector(`[data-card="${id}"]`);
+  const existing = card.parentNode.querySelector(".card-description");
+
+  // Якщо вже відкритий — закриваємо
+  if (existing) {
+    existing.remove();
+    card.classList.remove("card-active");
+    return;
+  }
+
+  // Закриваємо всі інші
+  document.querySelectorAll(".card-description").forEach(el => el.remove());
+  document.querySelectorAll(".card-active").forEach(el => el.classList.remove("card-active"));
+
+  // Беремо текст з модального вікна
   const modal = document.getElementById(id);
-  if (modal) {
-    modal.classList.add("show");
-    modal.classList.remove("hide");
+  const title = modal.querySelector("h2").textContent;
+  const text = modal.querySelector("p").textContent;
+
+  // Створюємо блок опису
+  const desc = document.createElement("div");
+  desc.className = "card-description";
+  desc.innerHTML = `
+    <button class="card-desc-close" onclick="closeAccordion('${id}')">×</button>
+    <h3>${title}</h3>
+    <p>${text}</p>
+  `;
+
+  card.classList.add("card-active");
+  card.parentNode.insertAdjacentElement("afterend", desc);
+
+  // Плавний скрол до опису
+  setTimeout(() => {
+    desc.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, 50);
+}
+
+function closeAccordion(id) {
+  const desc = document.querySelector(".card-description");
+  if (desc) desc.remove();
+  const card = document.querySelector(`[data-card="${id}"]`);
+  if (card) card.classList.remove("card-active");
+}
+
+// Головна функція відкриття
+function openModal(id) {
+  if (isMobile()) {
+    toggleAccordion(id);
+  } else {
+    const modal = document.getElementById(id);
+    if (modal) {
+      modal.classList.add("show");
+      modal.classList.remove("hide");
+    }
   }
 }
 
-// Закриття модального вікна
+// Закриття модального вікна (десктоп)
 function closeModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
     modal.classList.add("hide");
     setTimeout(() => {
       modal.classList.remove("show");
-    }, 300); // час відповідає transition у CSS
+      modal.classList.remove("hide");
+    }, 300);
   }
 }
 
@@ -68,5 +124,7 @@ document.addEventListener("keydown", function(event) {
     for (let i = 0; i < modals.length; i++) {
       closeModal(modals[i].id);
     }
+    document.querySelectorAll(".card-description").forEach(el => el.remove());
+    document.querySelectorAll(".card-active").forEach(el => el.classList.remove("card-active"));
   }
 });
