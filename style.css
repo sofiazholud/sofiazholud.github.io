@@ -84,6 +84,9 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
+  padding: 0;
+  height: auto;
+  max-height: 320px;
 }
 .card {
   background: rgba(255,255,255,0.05);
@@ -263,9 +266,9 @@ footer { position: relative; bottom: 0; width: 100%; }
   h1 { font-size: 2rem; letter-spacing: 0.2em; }
   h2 { font-size: 1.8rem; letter-spacing: 1px; }
   .directions-grid { grid-template-columns: 1fr; }
-  .card img { max-height: 180px; }
+  .card img { max-height: 120px; }
 
-  .card p { font-size: 1.4rem; }
+  .card p { font-size: 1.18rem; }
 
   .modal-content {
     width: 150%;
