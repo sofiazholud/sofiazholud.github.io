@@ -31,6 +31,14 @@ function setLanguage(lang) {
       el.textContent = dict[key];
     }
   }
+// окремо для тих ключів, які у словнику названі інакше
+  document.getElementById("subtitle").textContent = dict.subtitle;
+  document.getElementById("social-title").textContent = dict.socialTitle;
+  document.getElementById("directions-title").textContent = dict.directionsTitle;
+  document.getElementById("contacts-title").textContent = dict.contactsTitle;
+  document.getElementById("footer-text").textContent = dict.footerText;
+  document.getElementById("phone-label-1").textContent = dict.phoneLabel1;
+  document.getElementById("phone-label-2").textContent = dict.phoneLabel2;
 }
 
 // Відкриття модального вікна
