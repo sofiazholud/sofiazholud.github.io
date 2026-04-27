@@ -33,7 +33,7 @@ function setLanguage(lang) {
 
 // Перевірка мобільного
 function isMobile() {
-  return window.innerWidth <= 480;
+  return window.innerWidth <= 768; || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 }
 
 // Відкриття/закриття акордеону під карткою (мобільний)
