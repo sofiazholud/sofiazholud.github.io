@@ -84,14 +84,10 @@ function closeAccordion(id) {
 
 // Головна функція відкриття
 function openModal(id) {
-  if (isMobile()) {
-    toggleAccordion(id);
-  } else {
-    const modal = document.getElementById(id);
-    if (modal) {
-      modal.classList.add("show");
-      modal.classList.remove("hide");
-    }
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.classList.add("show");
+    modal.classList.remove("hide");
   }
 }
 
