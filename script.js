@@ -17,9 +17,10 @@ const translations = {
     "dir-pilates": "Пілатес",
     // "dir-fly-pilates": "Флай Пілатес",
     "dir-functional-training": "Функціональні тренування",
-    "dir-fly-class": "Флай Клас",
+    "dir-fly-kids": "Флай Кідс",
     "dir-pregnancy-yoga": "Йога для вагітних",
     "dir-adho-yoga": "Адхо-йога",
+    "dir-privat-lesson": "Індивідуальні тренування",
     "cta-button": "Записатися на заняття",
     "address-1": "📍 Вишгород, пр. Шевченка 6А",
     "address-2": "📍 КМ Міжріччя, вул. Фісташкова 60",
@@ -41,12 +42,14 @@ const translations = {
     // "modal-desc-fly-pilates": "Поєднання класичного пілатесу з елементами роботи у гамаках. Це сучасний формат тренувань, який робить вправи більш динамічними, додає нові відчуття та допомагає швидше досягати результатів.",
     "modal-title-functional-training": "Функціональні тренування",
     "modal-desc-functional-training": "Комплекс вправ, спрямований на розвиток сили, витривалості та мобільності. Заняття готують тіло до щоденних навантажень, покращують фізичну форму та підвищують загальну працездатність.",
-    "modal-title-fly-class": "Флай Клас",
-    "modal-desc-fly-class": "Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.",
+    "modal-title-fly-kids": "Флай Кідс",
+    "modal-desc-fly-kids": "Веселі та безпечні заняття у гамаках для дітей. Вони розвивають гнучкість, координацію та впевненість у собі, даруючи малюкам радість руху й нові емоції.",
     "modal-title-pregnancy-yoga": "Йога для вагітних",
     "modal-desc-pregnancy-yoga": "М’які практики, що підтримують фізичний стан і емоційний баланс майбутніх мам. Вправи адаптовані для різних етапів вагітності та допомагають підготувати тіло до пологів.",
     "modal-title-adho-yoga": "Адхо-йога",
-    "modal-desc-adho-yoga": "Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні."
+    "modal-desc-adho-yoga": "Практика, яка поєднує гнучкість і силову роботу, статику й динаміку, витривалість і баланс, а також дихальні та медитативні техніки. ADHO yoga базується на науковому підході до фізіології практики, щоб кожен процес і результат були зрозумілі й відчутні.",
+    "modal-title-privat-lesson": "Індивідуальні тренування",
+    "modal-desc-privat-lesson": "Персональний формат тренування, який враховує ваші потреби та рівень підготовки."
   },
   en: {
     subtitle: "A space that cares not only about the physical but also the inner state.",
@@ -62,9 +65,10 @@ const translations = {
     "dir-pilates": "Pilates",
     // "dir-fly-pilates": "Fly Pilates",
     "dir-functional-training": "Functional Training",
-    "dir-fly-class": "Fly Kids",
+    "dir-fly-kids": "Fly Kids",
     "dir-pregnancy-yoga": "Pregnancy Yoga",
     "dir-adho-yoga": "Adho Yoga",
+    "dir-privat-lesson": "Privat Lesson"
     "cta-button": "Book a class",
     "address-1": "📍 Vyshhorod, Shevchenka Ave 6A",
     "address-2": "📍 KM Mizhrichchia, Fistashkova St 60",
@@ -86,13 +90,14 @@ const translations = {
     // "modal-desc-fly-pilates": "A blend of classical Pilates with hammock-based elements. This modern training format makes exercises more dynamic, introduces new sensations and helps achieve results faster.",
     "modal-title-functional-training": "Functional Training",
     "modal-desc-functional-training": "A set of exercises aimed at building strength, endurance and mobility. These sessions prepare the body for daily demands, improve fitness and increase overall performance.",
-    "modal-title-fly-class": "Fly Class",
-    "modal-desc-fly-class": "Fun and safe hammock classes for children. They develop flexibility, coordination and confidence, giving kids joy of movement and new experiences.",
+    "modal-title-fly-kids": "Fly Kids",
+    "modal-desc-fly-kids": "Fun and safe hammock classes for children. They develop flexibility, coordination and confidence, giving kids joy of movement and new experiences.",
     "modal-title-pregnancy-yoga": "Pregnancy Yoga",
     "modal-desc-pregnancy-yoga": "Gentle practices that support the physical condition and emotional balance of expectant mothers. Exercises are adapted for different pregnancy stages and help prepare the body for childbirth.",
     "modal-title-adho-yoga": "Adho Yoga",
-    "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable."
-  }
+    "modal-desc-adho-yoga": "A practice combining flexibility and strength work, static and dynamic elements, endurance and balance, along with breathing, meditative techniques and relaxation. ADHO yoga is grounded in scientific understanding of physiological processes during practice, making outcomes clear and measurable.",
+    "modal-title-privat-lesson": "A personalized training format tailored to your needs and fitness level"
+}
 };
 
 // Функція перемикання мови
