@@ -18,7 +18,7 @@ const translations = {
     "dir-fly-pilates": "Флай Пілатес",
     "dir-functional-training": "Функціональні тренування",
     "dir-fly-class": "Флай Клас",
-    "dir-pregnancy-yoga": "Pregnancy Yoga",
+    "dir-pregnancy-yoga": "Йога для вагітних",
     "dir-adho-yoga": "Адхо-йога",
     "cta-button": "Записатися на заняття",
     "address-1": "📍 Вишгород, пр. Шевченка 6А",
