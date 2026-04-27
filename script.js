@@ -25,6 +25,8 @@ const translations = {
     "address-2": "📍 КМ Міжріччя, вул. Фісташкова 60",
     "nav-btn-1": "Навігація",
     "nav-btn-2": "Навігація",
+    "btn-schedule": "Розклад",
+    "btn-price": "Абонементи",
 
     // Модальні заголовки та описи
     "modal-title-fly-yoga": "Флай Йога",
@@ -68,6 +70,8 @@ const translations = {
     "address-2": "📍 KM Mizhrichchia, Fistashkova St 60",
     "nav-btn-1": "Navigation",
     "nav-btn-2": "Navigation",
+    "btn-schedule": "Schedule",
+    "btn-price": "Subscriptions",
 
     // Modal titles and descriptions
     "modal-title-fly-yoga": "Fly Yoga",
