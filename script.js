@@ -7,7 +7,8 @@ const translations = {
     contactsTitle: "Контакти",
     footerText: "© 2026 Erra Studio. Всі права захищені.",
     phoneLabel1: "Адміністратор:",
-    phoneLabel2: "Адміністратор:"
+    phoneLabel2: "Адміністратор:",
+    "dir-fly-yoga": "Флай Йога"
   },
   en: {
     subtitle: "A space that cares not only about the physical but also the inner state.",
@@ -16,7 +17,8 @@ const translations = {
     contactsTitle: "Contacts",
     footerText: "© 2026 Erra Studio. All rights reserved.",
     phoneLabel1: "Administrator:",
-    phoneLabel2: "Administrator:"
+    phoneLabel2: "Administrator:",
+    "dir-fly-yoga": "Fly Yoga"
   }
 };
 
