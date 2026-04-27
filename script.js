@@ -24,13 +24,13 @@ const translations = {
 
 // Функція перемикання мови
 function setLanguage(lang) {
-  document.getElementById("subtitle").textContent = translations[lang].subtitle;
-  document.getElementById("social-title").textContent = translations[lang].socialTitle;
-  document.getElementById("directions-title").textContent = translations[lang].directionsTitle;
-  document.getElementById("contacts-title").textContent = translations[lang].contactsTitle;
-  document.getElementById("footer-text").textContent = translations[lang].footerText;
-  document.getElementById("phone-label-1").textContent = translations[lang].phoneLabel1;
-  document.getElementById("phone-label-2").textContent = translations[lang].phoneLabel2;
+  const dict = translations[lang];
+  for (const key in dict) {
+    const el = document.getElementById(key);
+    if (el) {
+      el.textContent = dict[key];
+    }
+  }
 }
 
 // Відкриття модального вікна
