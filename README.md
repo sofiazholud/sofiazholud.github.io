@@ -25,3 +25,31 @@ Static website for **Erra Space Studio** (Вишгород, Україна), hos
 ##Contacts
 - Studio: Erra Space
 - Address: Vyshhorod, Shevchenka Ave 6A
+
+##  Напрямки
+- Флай Йога
+- Ішвара Йога
+- Йога Айенгара
+- Пілатес
+- Функціональні тренування
+- Йога для вагітних
+- Флай Кідс
+- Індивідуальні заняття
+
+##  Технології
+- **HTML5 / CSS3 / JavaScript**
+- **GitHub Pages** для хостингу
+- **Lazy loading** для оптимізації зображень
+- **Sitemap.xml + robots.txt** для SEO
+
+
+## SEO та індексація
+- Додано `sitemap.xml` для швидкої індексації
+- Додано `robots.txt` для відкритої індексації
+- Підтвердження домену у Google Search Console (через TXT‑запис або мета‑тег)
+
+##  Як запустити локально
+```bash
+git clone https://github.com/sofiazh/erraspace.git
+cd erraspace
+open index.html  
